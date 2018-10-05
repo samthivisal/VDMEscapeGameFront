@@ -1,0 +1,16 @@
+GameJour ===> j'ai l'heure
+
+GameNom ===> j'ai la date
+
+GameVR ===> jsuis pas censé avoir un boolean ?
+
+Tarif ===> je suis censé avoir genre une propriété Tarif avec :
+            - Senior
+            - Plein tarif
+            - Tarif Reduit
+            - Tarif Etudiant
+
+Il manque les infos de l'acheteteur genre nom prenom age email.
+
+Pour une reservation, il y a un acheteur et des spectateurs (j'imagine que ce sont les gens qui jouent),
+j'ai aucune info sur les spectateurs genre civilité nom prenom age
