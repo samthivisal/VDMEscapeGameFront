@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import _ from 'lodash';
 
 //Import Firebase module
 import * as firebase from 'firebase';
@@ -27,20 +26,18 @@ class MainPage extends Component {
     const settings = {timestampsInSnapshots: true};
     db.settings(settings);
 
-    const reservations = db.collection("reservations");
-    reservations.get()
-        .then((querySnapshot) => {
-          this.storeReservations(querySnapshot);
-        })
-        .catch((error) => {
-          console.log("Error when gather data from firebase", error);
-        })
+    const reservations = db.collection("reservation");
+    reservations.onSnapshot((snapshot) => {
+      this.storeReservations(snapshot);
+    });
   }
 
   storeReservations = (querySnapshot) => {
     const reservationsArray = [...this.state.reservations];
     querySnapshot.forEach((doc) => {
-      reservationsArray.push(doc.data());
+      const element = doc.data();
+      element.id = doc.id;
+      reservationsArray.push(element);
     });
 
     this.setState({reservations : reservationsArray});
