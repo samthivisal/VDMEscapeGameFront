@@ -40,7 +40,7 @@ class TableListReservation extends Component {
         Header: 'Jour',
         id: 'GameJour',
         accessor: (date) => {
-          return (<a>{moment(date).format('dddd Do MMMM YYYY')}</a>)
+          return (<span>{moment(date).format('dddd Do MMMM YYYY')}</span>)
         },
       }, {
         Header: 'Horaire',
