@@ -48,12 +48,19 @@ class TableListReservation extends Component {
       }, {
         Header: 'Nom de la salle',
         accessor: 'GameNom',
+        filterable: true,
+        filterMethod: (filter, row) =>
+            row.GameNom.toLowerCase().startsWith(filter.value),
       }, {
         Header: 'VR',
         accessor: 'GameVR',
+        filterable: true,
+        filterMethod: (filter, row) =>
+            row.GameVR.toLowerCase().startsWith(filter.value),
       }, {
         Header: 'Nombre joueur',
         accessor: 'nbSpetateur',
+        filterable: true,
       }, {
         Header: 'Plus de détails',
         id: 'id',
@@ -63,7 +70,8 @@ class TableListReservation extends Component {
                   type="zoom-in"
                   theme="outlined"
                   style={style}
-                  onClick={() => {
+                  onClick={(event) => {
+                    console.log(reservation);
                     this.storeCurrentReservationsId(reservation.id);
                     this.handleDisplayModal(reservation.id)
                   }}

@@ -14,6 +14,9 @@ import ActionAssessment from 'material-ui/svg-icons/action/assessment';
 //Import Customs modules
 import TableListReservation from './reservationsListing/TableListReservation';
 
+//Import Lodash module
+import _ from 'lodash';
+
 class MainPage extends Component {
   state = {
     reservations : []
@@ -40,7 +43,11 @@ class MainPage extends Component {
       reservationsArray.push(element);
     });
 
-    this.setState({reservations : reservationsArray});
+    const uniqTableReservation = _.uniqBy(reservationsArray, (reservation) => {
+      return reservation["id"];
+    });
+
+    this.setState({reservations : uniqTableReservation});
   };
 
   render() {
