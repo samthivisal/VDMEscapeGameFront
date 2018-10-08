@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d597fa1-29d2-4101-9c98-f3dd9e1cfa16" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/module/services/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/MainPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/services/reservationsListing/TableListReservation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/reservationsListing/TableListReservation.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,27 +17,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.38552713">
+    <splitter split-orientation="horizontal" split-proportion="0.4959451">
       <split-first>
-        <leaf>
-          <file leaf-file-name="TableListReservation.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/module/services/reservationsListing/TableListReservation.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1003">
-                  <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
         <leaf>
           <file leaf-file-name="MainPage.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/module/services/MainPage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="343">
-                  <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+                <state relative-caret-position="357">
+                  <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
                   <folding>
                     <element signature="e#66#103#0" expanded="true" />
                     <element signature="e#201#268#0" expanded="true" />
@@ -46,11 +33,42 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/App.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="323">
+                  <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="ReservationDetails.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/module/services/reservationsListing/ReservationDetails.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+                <state relative-caret-position="302">
+                  <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/module/config/config.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" column="35" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name=".env" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.env">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="51">
+                  <caret line="3" selection-start-line="3" selection-end-line="3" />
                 </state>
               </provider>
             </entry>
@@ -58,6 +76,11 @@
         </leaf>
       </split-second>
     </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>config</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,15 +91,16 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/module/testFirebase.js" />
         <option value="$PROJECT_DIR$/src/module/login/LoginPage.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/module/services/ReservationsListing/TableListReservation.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/module/dataTest/data.json" />
         <option value="$PROJECT_DIR$/src/module/dataTest/remarque.txt" />
         <option value="$PROJECT_DIR$/src/module/config/config.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/module/services/reservationsListing/TableListReservation.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/module/services/MainPage.js" />
+        <option value="$PROJECT_DIR$/.env" />
       </list>
     </option>
   </component>
@@ -91,11 +115,11 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1912" />
+    <option name="y" value="18" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -123,6 +147,13 @@
               <item name="vdmgit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vdmgit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vdmgit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vdmgit" type="b2602c69:ProjectViewProjectNode" />
@@ -183,18 +214,18 @@
       <option name="presentableId" value="Default" />
       <updated>1538743639423</updated>
       <workItem from="1538743640650" duration="9729000" />
-      <workItem from="1539009046521" duration="3158000" />
+      <workItem from="1539009046521" duration="5002000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12887000" />
+    <option name="totallyTimeSpent" value="14731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49837664" visible="true" weight="0.15542677" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.49837664" visible="true" weight="0.15542677" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -202,7 +233,7 @@
       <window_info id="npm" order="0" sideWeight="0.5016234" side_tool="true" weight="0.24973656" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.32897604" />
       <window_info id="Structure" order="2" sideWeight="0.5016234" side_tool="true" weight="0.24973656" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.26688454" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.26688454" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -270,17 +301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#182#232#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -302,42 +322,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/services/reservationsListing/TableListReservation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/module/config/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module/services/reservationsListing/TableListReservation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/module/services/reservationsListing/ReservationDetails.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="302">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/module/services/MainPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        <state relative-caret-position="357">
+          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
           <folding>
             <element signature="e#66#103#0" expanded="true" />
             <element signature="e#201#268#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
