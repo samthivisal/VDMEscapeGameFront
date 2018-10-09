@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 //Import Customs modules
-import ReservationDetails from './ReservationDetails';
+import BookingDetails from './bookingDetails';
 
 //Import Antd module
 import 'antd/dist/antd.css';
@@ -21,7 +21,7 @@ import 'firebase/firestore';
 
 moment.locale('fr');
 
-class TableListReservation extends Component {
+class TableListBooking extends Component {
   state = {
     displayModal: false,
     currentId: '',
@@ -111,7 +111,7 @@ class TableListReservation extends Component {
               columns={columns}
           />
           <Modal className="display-room-details"
-                 width={"20%"}
+                 width={"30%"}
                  visible={this.state.displayModal}
                  footer={
                    <Button key="close"
@@ -120,7 +120,7 @@ class TableListReservation extends Component {
                            }}>Fermer</Button>}
                  closable={false}
           >
-            <ReservationDetails groupReservationId={this.state.currentId} dataSource={this.state.personalReservations}/>
+            <BookingDetails groupReservationId={this.state.currentId} dataSource={this.state.personalReservations}/>
           </Modal>
         </div>
     )
@@ -130,4 +130,4 @@ class TableListReservation extends Component {
 const style = {
   color: 'green'
 };
-export default TableListReservation;
+export default TableListBooking;

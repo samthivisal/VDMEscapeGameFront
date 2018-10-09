@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d597fa1-29d2-4101-9c98-f3dd9e1cfa16" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/module/services/reservationsListing/ReservationDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/reservationsListing/ReservationDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/services/reservationsListing/TableListReservation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/reservationsListing/TableListReservation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/services/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/services/reservationsListing/ReservationDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/bookingsListing/bookingDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/services/reservationsListing/TableListReservation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/bookingsListing/tableListBooking.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,23 +19,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.39782345">
+    <splitter split-orientation="horizontal" split-proportion="0.618381">
       <split-first>
         <leaf>
-          <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/App.js">
+          <file leaf-file-name="metric.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/module/services/metric/metric.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+                <state relative-caret-position="597">
+                  <caret line="130" column="44" lean-forward="true" selection-start-line="130" selection-start-column="44" selection-end-line="130" selection-end-column="44" />
+                  <folding>
+                    <element signature="e#113#172#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ReservationDetails.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/module/services/reservationsListing/ReservationDetails.js">
+          <file leaf-file-name="configurableMenuMetric.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/module/services/metric/configurableMenuMetric.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+                <state relative-caret-position="533">
+                  <caret line="58" column="40" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="40" />
+                  <folding>
+                    <element signature="e#62#90#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -41,14 +50,44 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="TableListReservation.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/module/services/reservationsListing/TableListReservation.js">
+          <file leaf-file-name="tableListBooking.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/module/services/bookingsListing/tableListBooking.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="445">
-                  <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
+                <state relative-caret-position="-68">
+                  <caret line="20" selection-start-line="20" selection-end-line="20" />
                   <folding>
+                    <element signature="e#143#171#0" expanded="true" />
+                    <element signature="e#238#271#0" expanded="true" />
+                    <element signature="e#321#358#0" expanded="true" />
                     <element signature="e#423#460#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="App.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/App.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="561">
+                  <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="test.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/module/config/test.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="581">
+                  <caret line="87" column="22" lean-forward="true" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="bookingDetails.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/module/services/bookingsListing/bookingDetails.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="408">
+                  <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -61,7 +100,12 @@
     <findStrings>
       <find>config</find>
       <find>console</find>
+      <find>&lt;p</find>
+      <find>&lt;/p&gt;</find>
     </findStrings>
+    <replaceStrings>
+      <replace>&lt;/div&gt;</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,16 +117,21 @@
         <option value="$PROJECT_DIR$/src/module/testFirebase.js" />
         <option value="$PROJECT_DIR$/src/module/login/LoginPage.js" />
         <option value="$PROJECT_DIR$/src/module/services/ReservationsListing/TableListReservation.js" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/module/dataTest/data.json" />
         <option value="$PROJECT_DIR$/src/module/dataTest/remarque.txt" />
         <option value="$PROJECT_DIR$/src/module/config/config.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/module/services/MainPage.js" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/module/services/reservationsListing/ReservationDetails.js" />
         <option value="$PROJECT_DIR$/src/module/services/reservationsListing/TableListReservation.js" />
+        <option value="$PROJECT_DIR$/src/module/services/MainPage.js" />
+        <option value="$PROJECT_DIR$/src/module/services/charting/configurableMenuChart.js" />
+        <option value="$PROJECT_DIR$/src/module/services/reservationsListing/BookingDetails.js" />
+        <option value="$PROJECT_DIR$/src/module/services/metric/configurableMenuMetric.js" />
+        <option value="$PROJECT_DIR$/src/module/config/test.json" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/module/services/metric/metric.js" />
       </list>
     </option>
   </component>
@@ -150,7 +199,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="reservationsListing" type="462c0819:PsiDirectoryNode" />
+              <item name="bookingsListing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vdmgit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vdmgit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="metric" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -196,18 +253,18 @@
       <option name="presentableId" value="Default" />
       <updated>1538743639423</updated>
       <workItem from="1538743640650" duration="9729000" />
-      <workItem from="1539009046521" duration="10270000" />
+      <workItem from="1539009046521" duration="28056000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19999000" />
+    <option name="totallyTimeSpent" value="37785000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49837664" visible="true" weight="0.12855637" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49837664" visible="true" weight="0.13435195" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -283,13 +340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/module/dataTest/remarque.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -311,13 +361,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -332,30 +375,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/module/services/MainPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        <state relative-caret-position="468">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="57" selection-end-column="7" />
           <folding>
             <element signature="e#66#103#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module/services/reservationsListing/ReservationDetails.js">
+    <entry file="file://$PROJECT_DIR$/src/module/services/bookingsListing/bookingDetails.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module/services/reservationsListing/TableListReservation.js">
+    <entry file="file://$PROJECT_DIR$/src/module/config/test.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
+        <state relative-caret-position="581">
+          <caret line="87" column="22" lean-forward="true" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/services/bookingsListing/tableListBooking.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
+            <element signature="e#143#171#0" expanded="true" />
+            <element signature="e#238#271#0" expanded="true" />
+            <element signature="e#321#358#0" expanded="true" />
             <element signature="e#423#460#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/services/metric/configurableMenuMetric.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="58" column="40" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="40" />
+          <folding>
+            <element signature="e#62#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/services/metric/metric.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="130" column="44" lean-forward="true" selection-start-line="130" selection-start-column="44" selection-end-line="130" selection-end-column="44" />
+          <folding>
+            <element signature="e#113#172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
         </state>
       </provider>
     </entry>

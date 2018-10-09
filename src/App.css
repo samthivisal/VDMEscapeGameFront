@@ -5,3 +5,34 @@
 .reservations-container{
   text-align: center;
 }
+
+.stats-container{ display: flex;}
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0 0 3px #b7b7b7;
+    margin: 15px;
+    min-width: 330px;
+    height: fit-content;
+}
+
+.menu-container .ant-btn {
+    margin-top: 20px;
+    background: #66BB6A;
+    color: white;
+}
+.stats-metric-container{
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.kpi{
+    text-align: initial;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 3px #b7b7b7;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}

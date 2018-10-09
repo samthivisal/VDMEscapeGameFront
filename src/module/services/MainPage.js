@@ -11,10 +11,13 @@ import ActionChromeReaderMode from 'material-ui/svg-icons/action/chrome-reader-m
 import ActionAssessment from 'material-ui/svg-icons/action/assessment';
 
 //Import Customs modules
-import TableListReservation from './reservationsListing/TableListReservation';
+import TableListBooking from './bookingsListing/tableListBooking';
+import ConfigurableMenuMetric from './metric/configurableMenuMetric';
 
 //Import Lodash module
 import _ from 'lodash';
+
+import testJson from '../config/test';
 
 class MainPage extends Component {
   state = {
@@ -31,14 +34,15 @@ class MainPage extends Component {
       messagingSenderId: process.env.REACT_FIREBASE_MESSAGING_SENDER_ID
     });
 
-    const db = firebase.firestore();
-    const settings = {timestampsInSnapshots: true};
-    db.settings(settings);
+    // const db = firebase.firestore();
+    // const settings = {timestampsInSnapshots: true};
+    // db.settings(settings);
 
-    const reservations = db.collection("reservation");
-    reservations.onSnapshot((snapshot) => {
-      this.storeReservations(snapshot);
-    });
+    // const reservations = db.collection("reservation");
+    // reservations.onSnapshot((snapshot) => {
+    //   this.storeReservations(snapshot);
+    // });
+    this.setState({reservations : testJson});
   }
 
   storeReservations = (querySnapshot) => {
@@ -53,7 +57,8 @@ class MainPage extends Component {
       return reservation["id"];
     });
 
-    this.setState({reservations : uniqTableReservation});
+    // this.setState({reservations : uniqTableReservation});
+
   };
 
   render() {
@@ -63,13 +68,15 @@ class MainPage extends Component {
                 className="nav-bar"
           >
             <Tab
-                value="reservations"
-                icon={<ActionChromeReaderMode/>}
-                children={<TableListReservation reservations={this.state.reservations}/>}
-            />
-            <Tab
                 value="charts"
                 icon={<ActionAssessment/>}
+                children={<ConfigurableMenuMetric reservations={this.state.reservations}/>}
+            />
+
+            <Tab
+                value="reservations"
+                icon={<ActionChromeReaderMode/>}
+                children={<TableListBooking reservations={this.state.reservations}/>}
             />
           </Tabs>
         </MuiThemeProvider>

@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 //Import Antd module
 import {Table} from 'antd';
 
-class ReservationDetails extends Component {
+class BookingDetails extends Component {
 
   render() {
     const columns = [
@@ -11,17 +11,17 @@ class ReservationDetails extends Component {
         title: 'Civilité',
         dataIndex: 'Civilite',
         key: 'Civilite',
-        // align : 'center'
+        align : 'center'
       },{
         title: 'Age',
         dataIndex: 'Age',
         key: 'Age',
-        // align : 'center'
+        align : 'center'
       },{
         title: 'Tarif',
         dataIndex: 'Tarif',
         key: 'Tarif',
-        // align : 'center'
+        align : 'center'
       }
     ];
 
@@ -33,4 +33,4 @@ class ReservationDetails extends Component {
   }
 }
 
-export default ReservationDetails;
+export default BookingDetails;
