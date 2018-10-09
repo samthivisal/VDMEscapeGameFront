@@ -15,23 +15,47 @@ import 'moment/locale/fr';
 import ReactTable from 'react-table';
 import 'react-table/react-table.css';
 
+//Import Firebase module
+import * as firebase from 'firebase';
+import 'firebase/firestore';
+
 moment.locale('fr');
 
 class TableListReservation extends Component {
   state = {
     displayModal: false,
-    currentId : ''
+    currentId: '',
+    personalReservations : []
   };
 
   handleDisplayModal = () => {
     this.setState(prevState => {
       return {
-        displayModal: !prevState.displayModal};
+        displayModal: !prevState.displayModal
+      };
     });
   };
 
-  storeCurrentReservationsId = (id) => {
-    this.setState({currentId : id});
+  getPersonalReservations = (id) => {
+    const db = firebase.firestore();
+    const settings = {timestampsInSnapshots: true};
+    db.settings(settings);
+
+    const reservations = db.collection("personalReservation");
+
+    reservations.where("reservationID", "==", id)
+        .onSnapshot((snapshot) => {
+          this.storeReservations(snapshot);
+        });
+  };
+
+  storeReservations = (querySnapshot) => {
+    const personalReservationsArray = [];
+    querySnapshot.forEach((snapshot) => {
+      personalReservationsArray.push(snapshot.data());
+    });
+
+    this.setState({personalReservations : personalReservationsArray});
   };
 
   render() {
@@ -50,13 +74,13 @@ class TableListReservation extends Component {
         accessor: 'GameNom',
         filterable: true,
         filterMethod: (filter, row) =>
-            row.GameNom.toLowerCase().startsWith(filter.value),
+            row.GameNom.toLowerCase().startsWith(filter.value.toLowerCase()),
       }, {
         Header: 'VR',
         accessor: 'GameVR',
         filterable: true,
         filterMethod: (filter, row) =>
-            row.GameVR.toLowerCase().startsWith(filter.value),
+            row.GameVR.toLowerCase().startsWith(filter.value.toLowerCase()),
       }, {
         Header: 'Nombre joueur',
         accessor: 'nbSpetateur',
@@ -71,9 +95,8 @@ class TableListReservation extends Component {
                   theme="outlined"
                   style={style}
                   onClick={(event) => {
-                    console.log(reservation);
-                    this.storeCurrentReservationsId(reservation.id);
-                    this.handleDisplayModal(reservation.id)
+                    this.getPersonalReservations(reservation.id);
+                    this.handleDisplayModal()
                   }}
               />
           )
@@ -88,7 +111,7 @@ class TableListReservation extends Component {
               columns={columns}
           />
           <Modal className="display-room-details"
-                 width={"60%"}
+                 width={"20%"}
                  visible={this.state.displayModal}
                  footer={
                    <Button key="close"
@@ -97,7 +120,7 @@ class TableListReservation extends Component {
                            }}>Fermer</Button>}
                  closable={false}
           >
-            <ReservationDetails groupReservationId={this.state.currentId}/>
+            <ReservationDetails groupReservationId={this.state.currentId} dataSource={this.state.personalReservations}/>
           </Modal>
         </div>
     )

@@ -1,33 +1,33 @@
 import React, {Component} from 'react';
 
-//Import Firebase module
-import * as firebase from 'firebase';
-import 'firebase/firestore';
+//Import Antd module
+import {Table} from 'antd';
 
 class ReservationDetails extends Component {
-  componentDidMount() {
-    const db = firebase.firestore();
-    const settings = {timestampsInSnapshots: true};
-    db.settings(settings);
-
-    const reservations = db.collection("personalReservation");
-
-    reservations.where("reservationID", "==", this.props.groupReservationId)
-        .onSnapshot((snapshot) => {
-          this.storeReservations(snapshot);
-        });
-  }
-
-  storeReservations = (querySnapshot) => {
-    querySnapshot.forEach((doc) => {
-      console.log(doc.data());
-    });
-  };
 
   render() {
+    const columns = [
+      {
+        title: 'Civilité',
+        dataIndex: 'Civilite',
+        key: 'Civilite',
+        // align : 'center'
+      },{
+        title: 'Age',
+        dataIndex: 'Age',
+        key: 'Age',
+        // align : 'center'
+      },{
+        title: 'Tarif',
+        dataIndex: 'Tarif',
+        key: 'Tarif',
+        // align : 'center'
+      }
+    ];
+
     return (
         <div>
-          Bonjour
+          <Table pagination={true} columns={columns} dataSource={this.props.dataSource}/>
         </div>
     )
   }
