@@ -1,0 +1,68 @@
+{
+  "popularRoom" : {
+    "name" : "Salle la plus populaire : ",
+    "icon" : "fire",
+    "type" : "room",
+    "post" : ""
+  },
+  "notPopularRoom" : {
+    "name" : "Salle la moins populaire : ",
+    "icon" : "snowflake",
+    "type" : "room",
+    "post" : ""
+  },
+  "totalPlayers" : {
+    "name" : "Nombre total de joueurs : ",
+    "icon" : "users",
+    "type" : "player",
+    "post" : ""
+  },
+  "totalFemalePlayers" : {
+    "name" : "Nombre de Femme : ",
+    "icon" : "female",
+    "type" : "player",
+    "post" : ""
+  },
+  "totalMalePlayers" : {
+    "name" : "Nombre d'Homme : ",
+    "icon" : "male",
+    "type" : "player",
+    "post" : ""
+  },
+  "avgAgePlayers" : {
+    "name" : "Age moyen des joueurs : ",
+    "icon" : "tree",
+    "type" : "player",
+    "post" : " ans"
+  },
+  "pricingFull" : {
+    "name" : "Plein tarif : ",
+    "icon" : "hand-holding-usd",
+    "type" : "pricing",
+    "post" : "%"
+  },
+  "pricingStudent" : {
+    "name" : "Tarif etudiant : ",
+    "icon" : "hand-holding-usd",
+    "type" : "pricing",
+    "post" : "%"
+  },
+  "pricingSenior" : {
+    "name" : "Tarif senior : ",
+    "icon" : "hand-holding-usd",
+    "type" : "pricing",
+    "post" : "%"
+  },
+  "pricingReduced" : {
+    "name" : "Tarif reduit : ",
+    "icon" : "hand-holding-usd",
+    "type" : "pricing",
+    "post" : "%"
+  },
+  "avgAgeBuyers" : {
+    "name" : "Age moyen des acheteurs : ",
+    "icon" : "tree",
+    "type" : "player",
+    "post" : " ans"
+  }
+}

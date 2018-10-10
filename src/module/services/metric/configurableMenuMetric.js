@@ -11,7 +11,7 @@ import _ from 'lodash';
 import * as moment from 'moment';
 
 //Import Customs modules
-import Metric from './metric';
+import Metrics from './metrics';
 
 class ConfigurableMenuMetric extends Component {
   state ={
@@ -48,7 +48,7 @@ class ConfigurableMenuMetric extends Component {
   displayMetric = (reservationsFiltered) => {
     if (this.state.displayMetric){
       return (
-          <Metric bookingsFiltered={reservationsFiltered}/>
+          <Metrics bookingsFiltered={reservationsFiltered}/>
       )
     }
   };
@@ -57,8 +57,16 @@ class ConfigurableMenuMetric extends Component {
     return (
         <div className="stats-container">
           <div className="menu-container">
-            <DatePicker onChange={(date, dateString) => this.handleOnChangeDatePickerStart(dateString)}/>
-            <DatePicker onChange={(date, dateString) => this.handleOnChangeDatePickerEnd(dateString)}/>
+            <DatePicker
+                onChange={(date, dateString) => this.handleOnChangeDatePickerStart(dateString)}
+                placeholder="Date début période"
+                format="DD MMMM YYYY"
+            />
+            <DatePicker
+                onChange={(date, dateString) => this.handleOnChangeDatePickerEnd(dateString)}
+                placeholder="Date fin période"
+                format="DD MMMM YYYY"
+            />
             <Button
                 onClick={() => this.getReservationsBetweenDate(this.props.reservations, this.state.startDate, this.state.endDate)}> Go
             </Button>
