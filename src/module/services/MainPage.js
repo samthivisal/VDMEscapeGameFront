@@ -17,8 +17,6 @@ import ConfigurableMenuMetric from './metric/configurableMenuMetric';
 //Import Lodash module
 import _ from 'lodash';
 
-import testJson from '../dataTest/test';
-
 class MainPage extends Component {
   state = {
     reservations : []
@@ -38,7 +36,7 @@ class MainPage extends Component {
     const settings = {timestampsInSnapshots: true};
     db.settings(settings);
 
-    const reservations = db.collection("reservation");
+    const reservations = db.collection("reservation").limit(50);
     reservations.onSnapshot((snapshot) => {
       this.storeReservations(snapshot);
     });

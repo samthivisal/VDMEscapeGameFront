@@ -7,9 +7,9 @@ import LoginPage from './module/login/LoginPage';
 
 //Import fontAwesome
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faFemale, faMale, faFire, faUsers, faHandHoldingUsd, faSnowflake, faTree} from '@fortawesome/free-solid-svg-icons';
+import { faFemale, faMale, faFire, faUsers, faHandHoldingUsd, faSnowflake, faTree, faPlus} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faFemale, faMale, faFire, faUsers, faHandHoldingUsd, faSnowflake, faTree);
+library.add(faFemale, faMale, faFire, faUsers, faHandHoldingUsd, faSnowflake, faTree, faPlus);
 
 class App extends Component {
   state = {

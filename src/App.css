@@ -47,6 +47,10 @@
     background: white;
 }
 
+.more-stats{
+    cursor: pointer;
+}
+
 .kpi-header{
     display: flex;
     align-items: center;

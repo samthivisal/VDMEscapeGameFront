@@ -14,6 +14,7 @@ class Metrics extends Component {
   };
 
   componentDidMount() {
+    console.log(this.props.bookingsFiltered);
     this.getUniqRoomName();
   }
 
@@ -88,6 +89,7 @@ class Metrics extends Component {
           <div className="stats-type-container">
             <Metric title={kpi.popularRoom["name"]} result={this.getBestRoom()} icon={kpi.popularRoom["icon"]} post={kpi.notPopularRoom["post"]}/>
             <Metric title={kpi.notPopularRoom["name"]} result={this.getWorstRoom()} icon={kpi.notPopularRoom["icon"]} post={kpi.notPopularRoom["post"]}/>
+            <Metric title={kpi.seeMore["name"]} result="" icon={kpi.seeMore["icon"]} post="" buttonable={true} bookingsFiltered={this.props.bookingsFiltered}/>
           </div>
           <div className="stats-type-container">
             <Metric title={kpi.totalPlayers["name"]} result={this.getTotal("nbSpetateur")} icon={kpi.totalPlayers["icon"]} post={kpi.totalPlayers["post"]}/>

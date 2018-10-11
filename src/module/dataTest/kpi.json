@@ -64,5 +64,11 @@
     "icon" : "tree",
     "type" : "player",
     "post" : " ans"
+  },
+  "seeMore" : {
+    "name" : "Plus de statistiques",
+    "icon" : "plus",
+    "type" : "room",
+    "post" : ""
   }
 }
