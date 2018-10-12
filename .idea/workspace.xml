@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d597fa1-29d2-4101-9c98-f3dd9e1cfa16" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/module/services/metric/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module/services/metric/tableContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/dataTest/kpi.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/dataTest/kpi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/services/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/MainPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/services/metric/metric.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/metric/metric.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/module/services/metric/metrics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/metric/metrics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/services/metric/modalTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/metric/modalTable.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,14 +19,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45338207">
+    <splitter split-orientation="horizontal" split-proportion="0.5914489">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="metrics.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/module/services/metric/metrics.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="928">
-                  <caret line="93" column="48" lean-forward="true" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
+                <state relative-caret-position="-555">
+                  <caret line="16" selection-start-line="16" selection-end-line="16" />
                 </state>
               </provider>
             </entry>
@@ -36,8 +34,8 @@
           <file leaf-file-name="modalTable.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/module/services/metric/modalTable.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="284">
-                  <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+                <state relative-caret-position="1329">
+                  <caret line="195" column="27" lean-forward="true" selection-start-line="195" selection-start-column="27" selection-end-line="195" selection-end-column="27" />
                   <folding>
                     <element signature="e#90#127#0" expanded="true" />
                     <element signature="e#203#231#0" expanded="true" />
@@ -50,43 +48,35 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/App.js">
+          <file leaf-file-name="tableContent.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/module/services/metric/tableContent.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="92" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
+                <state relative-caret-position="629">
+                  <caret line="37" column="16" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="37" selection-end-column="16" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
-                    <element signature="e#86#136#0" expanded="true" />
-                    <element signature="e#209#269#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="metric.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/module/services/metric/metric.js">
+          <file leaf-file-name="modalTable.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/module/services/metric/modalTable.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="26" column="45" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="45" />
+                <state relative-caret-position="71">
+                  <caret line="43" selection-start-line="43" selection-end-line="43" />
+                  <folding>
+                    <element signature="e#203#231#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="kpi.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/module/dataTest/kpi.json">
+          <file leaf-file-name="table.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/module/services/metric/table.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="301">
-                  <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="App.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/App.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="369">
-                  <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+                <state relative-caret-position="51">
+                  <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -102,6 +92,10 @@
       <find>&lt;p</find>
       <find>&lt;/p&gt;</find>
       <find>Table</find>
+      <find>personalBookings</find>
+      <find>============</find>
+      <find>storeStatisticsByGender</find>
+      <find>personalReservationsArray</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;/div&gt;</replace>
@@ -130,13 +124,15 @@
         <option value="$PROJECT_DIR$/src/module/dataTest/kpi.js" />
         <option value="$PROJECT_DIR$/src/module/services/metric/configurableMenuMetric.js" />
         <option value="$PROJECT_DIR$/src/module/services/bookingsListing/tableListBooking.js" />
-        <option value="$PROJECT_DIR$/src/module/services/metric/modalTable.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/module/dataTest/kpi.json" />
-        <option value="$PROJECT_DIR$/src/module/services/metric/metrics.js" />
         <option value="$PROJECT_DIR$/src/module/services/MainPage.js" />
         <option value="$PROJECT_DIR$/src/module/services/metric/metric.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/module/services/metric/metrics.js" />
+        <option value="$PROJECT_DIR$/src/module/services/metric/tableContent.js" />
+        <option value="$PROJECT_DIR$/src/module/services/metric/table.css" />
+        <option value="$PROJECT_DIR$/src/module/services/metric/modalTable.js" />
       </list>
     </option>
   </component>
@@ -264,18 +260,18 @@
       <updated>1538743639423</updated>
       <workItem from="1538743640650" duration="9729000" />
       <workItem from="1539009046521" duration="39418000" />
-      <workItem from="1539184067785" duration="8611000" />
+      <workItem from="1539184067785" duration="20905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57758000" />
+    <option name="totallyTimeSpent" value="70052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49837664" visible="true" weight="0.13540569" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49837664" visible="true" weight="0.14910433" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -283,7 +279,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info id="npm" order="0" sideWeight="0.5016234" side_tool="true" weight="0.24973656" />
       <window_info id="Structure" order="2" sideWeight="0.5016234" side_tool="true" weight="0.24973656" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.19389978" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.19389978" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -459,6 +455,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/services/MainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#66#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/dataTest/kpi.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/services/metric/metric.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -471,52 +498,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/services/metric/table.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/module/services/metric/metrics.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="928">
-          <caret line="93" column="48" lean-forward="true" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
+        <state relative-caret-position="-555">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module/dataTest/kpi.json">
+    <entry file="file://$PROJECT_DIR$/src/module/services/metric/tableContent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module/services/MainPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="629">
+          <caret line="37" column="16" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="37" selection-end-column="16" />
           <folding>
-            <element signature="e#66#103#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module/services/metric/metric.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/module/services/metric/modalTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        <state relative-caret-position="71">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
-            <element signature="e#90#127#0" expanded="true" />
             <element signature="e#203#231#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
         </state>
       </provider>
     </entry>
