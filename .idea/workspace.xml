@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d597fa1-29d2-4101-9c98-f3dd9e1cfa16" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/services/metric/metric.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/metric/metric.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/services/metric/metrics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/metric/metrics.js" afterDir="false" />
-    </list>
+    <list default="true" id="2d597fa1-29d2-4101-9c98-f3dd9e1cfa16" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,11 +16,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.66953844">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="MainPage.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="MainPage.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/module/services/MainPage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-14">
-                  <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+                <state relative-caret-position="479">
+                  <caret line="68" selection-start-line="68" selection-end-line="72" selection-end-column="14" />
                   <folding>
                     <element signature="e#66#103#0" expanded="true" />
                   </folding>
@@ -56,11 +52,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="metrics.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="metrics.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/module/services/metric/metrics.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="513">
-                  <caret line="170" column="16" lean-forward="true" selection-start-line="170" selection-start-column="16" selection-end-line="170" selection-end-column="16" />
+                <state relative-caret-position="241">
+                  <caret line="154" column="12" selection-start-line="154" selection-start-column="12" selection-end-line="154" selection-end-column="12" />
                   <folding>
                     <element signature="e#112#142#0" expanded="true" />
                   </folding>
@@ -149,7 +145,6 @@
         <option value="$PROJECT_DIR$/src/module/services/metric/table.css" />
         <option value="$PROJECT_DIR$/src/module/services/bookingsListing/bookingDetails.js" />
         <option value="$PROJECT_DIR$/src/module/services/bookingsListing/tableListBooking.js" />
-        <option value="$PROJECT_DIR$/src/module/services/MainPage.js" />
         <option value="$PROJECT_DIR$/src/module/services/metric/modalTable.js" />
         <option value="$PROJECT_DIR$/src/module/dataTest/kpi.json" />
         <option value="$PROJECT_DIR$/src/App.js" />
@@ -157,6 +152,7 @@
         <option value="$PROJECT_DIR$/src/module/services/metric/metric.js" />
         <option value="$PROJECT_DIR$/src/module/dataTest/translationIRL.json" />
         <option value="$PROJECT_DIR$/src/module/services/metric/metrics.js" />
+        <option value="$PROJECT_DIR$/src/module/services/MainPage.js" />
       </list>
     </option>
   </component>
@@ -287,18 +283,18 @@
       <workItem from="1539184067785" duration="20905000" />
       <workItem from="1540216987807" duration="6709000" />
       <workItem from="1540821066605" duration="1374000" />
-      <workItem from="1540981319204" duration="11652000" />
+      <workItem from="1540981319204" duration="11776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89787000" />
+    <option name="totallyTimeSpent" value="89911000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49837664" visible="true" weight="0.14383562" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49837664" visible="true" weight="0.14752372" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -591,16 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module/services/MainPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-          <folding>
-            <element signature="e#66#103#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -658,10 +644,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/module/services/metric/metrics.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="170" column="16" lean-forward="true" selection-start-line="170" selection-start-column="16" selection-end-line="170" selection-end-column="16" />
+        <state relative-caret-position="241">
+          <caret line="154" column="12" selection-start-line="154" selection-start-column="12" selection-end-line="154" selection-end-column="12" />
           <folding>
             <element signature="e#112#142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/services/MainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="68" selection-start-line="68" selection-end-line="72" selection-end-column="14" />
+          <folding>
+            <element signature="e#66#103#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -66,11 +66,11 @@ class MainPage extends Component {
           <Tabs contentContainerClassName="tabs-content"
                 className="nav-bar"
           >
-            {/*<Tab*/}
-                {/*value="reservations"*/}
-                {/*icon={<ActionChromeReaderMode/>}*/}
-                {/*children={<TableListBooking reservations={this.state.reservations}/>}*/}
-            {/*/>*/}
+            <Tab
+                value="reservations"
+                icon={<ActionChromeReaderMode/>}
+                children={<TableListBooking reservations={this.state.reservations}/>}
+            />
             <Tab
                 value="charts"
                 icon={<ActionAssessment/>}
