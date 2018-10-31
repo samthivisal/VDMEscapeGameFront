@@ -1,0 +1,11 @@
+{
+  "total" : "Total réservations",
+  "totalSpectators" : "Total Joueurs",
+  "nbMen" : "Nombre Hommes",
+  "nbWomen" : "Nombre Femmes",
+  "underAge" : "Moins de 15 ans",
+  "youngPerson" : "15 - 24 ans",
+  "adult" : "25 - 39 ans",
+  "oldAdult" : "40 - 54 ans",
+  "senior" : "Plus de 55 ans"
+}

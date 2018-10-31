@@ -3,13 +3,19 @@ import React, {Component} from 'react';
 //Import FontAwesome module
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
+//Import Lodash module
+import _ from 'lodash';
+
 //Import custom modules
 import ModalTable from './modalTable';
+
+import translationIRL from '../../dataTest/translationIRL';
 
 class Metric extends Component {
   state = {
     personalReservations: [],
-    modalExtraDetails : false
+    modalExtraDetails : false,
+    extraDisplay: false
   };
 
     handleDisplayModal = () => {
@@ -29,6 +35,7 @@ class Metric extends Component {
               // pulse={true}
               spin={true}
               onClick={() => {
+                this.setState({extraDisplay: !this.state.extraDisplay});
                 this.handleDisplayModal()
               }}
           />
@@ -51,6 +58,22 @@ class Metric extends Component {
     }
   };
 
+  renderExtraInfo = () => {
+    const array = [];
+
+    if (typeof this.props.more !== "undefined"){
+      _.forEach(this.props.more, (info, title) => {
+        array.push(
+            <div className="extra-info">
+              <span>{translationIRL[title]} </span>
+              <span className="extra-info-result">{` : ${info}`}</span>
+            </div>)
+      });
+    }
+
+    return array;
+  };
+
   render() {
     return (
         <div className="kpi">
@@ -59,7 +82,8 @@ class Metric extends Component {
             <span className="kpi-title">{this.props.title}</span>
           </div>
           <span className="kpi-result">{`${this.props.result}${this.props.post}`}</span>
-          {this.renderModalExtraDetails()}
+          {this.state.extraDisplay? this.renderExtraInfo() : ""}
+          {/*{this.renderModalExtraDetails()}*/}
         </div>
     )
   }

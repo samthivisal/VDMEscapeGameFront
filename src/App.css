@@ -64,6 +64,15 @@
     color: deepskyblue;
 }
 
+.extra-info{
+    display: flex;
+    justify-content: center;
+}
+
+.extra-info-result{
+    font-weight: bold;
+}
+
 .kpi-result{
     text-align: center;
     font-size: 12px;

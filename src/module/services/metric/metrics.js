@@ -102,13 +102,40 @@ class Metrics extends Component {
 
   getTotalVR = (keyword) => {
     let total = 0;
+    let nbSpectators = 0;
+    let nbWomen = 0;
+    let nbMen = 0;
+    let underAge = 0;
+    let youngPerson = 0;
+    let adult = 0;
+    let oldAdult = 0;
+    let senior = 0;
+
     _.forEach(this.props.bookingsFiltered, (bookingFiltered) => {
       if (bookingFiltered["GameVR"] === keyword) {
         total = total + 1;
+        nbSpectators = nbSpectators + bookingFiltered["nbSpectators"];
+        nbWomen = nbWomen + bookingFiltered["nbWomen"];
+        nbMen = nbMen + bookingFiltered["nbMen"];
+        underAge = underAge + bookingFiltered["UnderAge"];
+        youngPerson = youngPerson + bookingFiltered["YoungPerson"];
+        adult = adult + bookingFiltered["Adults"];
+        oldAdult = oldAdult + bookingFiltered["OldAdults"];
+        senior = senior + bookingFiltered["Senior"];
       }
     });
 
-    return total;
+    return  ({
+      total : total,
+      totalSpectators: nbSpectators,
+      nbMen : nbMen,
+      nbWomen : nbWomen,
+      underAge : underAge,
+      youngPerson : youngPerson,
+      adult : adult,
+      oldAdult : oldAdult,
+      senior : senior,
+    });
   };
 
   renderTotalRoomBooked = () => {
@@ -124,9 +151,23 @@ class Metrics extends Component {
             {this.renderTotalRoomBooked()}
             <Metric title={kpi.popularRoom["name"]} result={this.getBestRoom()} icon={kpi.popularRoom["icon"]} post={kpi.notPopularRoom["post"]}/>
             <Metric title={kpi.notPopularRoom["name"]} result={this.getWorstRoom()} icon={kpi.notPopularRoom["icon"]} post={kpi.notPopularRoom["post"]}/>
-            <Metric title={kpi.vrRoom["name"]} result={this.getTotalVR("Oui")} icon={kpi.vrRoom["icon"]} post={kpi.notPopularRoom["post"]}/>
-            <Metric title={kpi.notVrRoom["name"]} result={this.getTotalVR("Non")} icon={kpi.notVrRoom["icon"]} post={kpi.notPopularRoom["post"]}/>
-            <Metric title={kpi.seeMore["name"]} result="" icon={kpi.seeMore["icon"]} post="" buttonable={true} bookingsFiltered={this.props.bookingsFiltered}/>
+            <Metric
+                title={kpi.vrRoom["name"]}
+                result={`${this.getTotalVR("Oui")["total"]} réservations avec ${this.getTotalVR("Oui")["totalSpectators"]} joueurs`}
+                icon={kpi.vrRoom["icon"]}
+                post={kpi.notPopularRoom["post"]}
+                more={this.getTotalVR("Oui")}
+                buttonable={true}
+            />
+            <Metric
+                title={kpi.notVrRoom["name"]}
+                result={`${this.getTotalVR("Non")["total"]} réservations avec ${this.getTotalVR("Non")["totalSpectators"]} joueurs`}
+                icon={kpi.notVrRoom["icon"]}
+                post={kpi.notPopularRoom["post"]}
+                more={this.getTotalVR("Non")}
+                buttonable={true}
+            />
+            {/*<Metric title={kpi.seeMore["name"]} result="" icon={kpi.seeMore["icon"]} post="" buttonable={true} bookingsFiltered={this.props.bookingsFiltered}/>*/}
           </div>
           <div className="stats-type-container">
             {this.getRepartitionByRoom()}
