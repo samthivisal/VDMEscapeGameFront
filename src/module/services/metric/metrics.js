@@ -111,10 +111,17 @@ class Metrics extends Component {
     return total;
   };
 
+  renderTotalRoomBooked = () => {
+    return (
+        <Metric title={`Total salles réservées`} result={Object.keys(this.props.bookingsFiltered).length} icon={"trophy"} post="" bookingsFiltered={this.props.bookingsFiltered}/>
+    )
+  };
+
   render() {
     return (
         <div className="stats-metric-container">
           <div className="stats-type-container">
+            {this.renderTotalRoomBooked()}
             <Metric title={kpi.popularRoom["name"]} result={this.getBestRoom()} icon={kpi.popularRoom["icon"]} post={kpi.notPopularRoom["post"]}/>
             <Metric title={kpi.notPopularRoom["name"]} result={this.getWorstRoom()} icon={kpi.notPopularRoom["icon"]} post={kpi.notPopularRoom["post"]}/>
             <Metric title={kpi.vrRoom["name"]} result={this.getTotalVR("Oui")} icon={kpi.vrRoom["icon"]} post={kpi.notPopularRoom["post"]}/>

@@ -60,7 +60,12 @@
     font-size: 13px;
 }
 
+.kpi-title{
+    color: deepskyblue;
+}
+
 .kpi-result{
     text-align: center;
     font-size: 12px;
+    font-weight: bold;
 }

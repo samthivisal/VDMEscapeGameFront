@@ -56,7 +56,7 @@ class Metric extends Component {
         <div className="kpi">
           <div className="kpi-header">
             {this.renderButton()}
-            {this.props.title}
+            <span className="kpi-title">{this.props.title}</span>
           </div>
           <span className="kpi-result">{`${this.props.result}${this.props.post}`}</span>
           {this.renderModalExtraDetails()}

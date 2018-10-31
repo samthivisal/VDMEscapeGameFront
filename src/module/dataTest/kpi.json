@@ -24,7 +24,7 @@
     "post" : ""
   },
   "totalPlayers" : {
-    "name" : "Nombre total de joueurs : ",
+    "name" : "Total de joueurs : ",
     "icon" : "users",
     "type" : "player",
     "post" : ""
