@@ -13,13 +13,19 @@ library.add(faFemale, faMale, faFire, faUsers, faHandHoldingUsd, faSnowflake, fa
 
 class App extends Component {
   state = {
-    isLoginPage: false,
+    isLoginPage: true,
+  };
+
+  handleIsLoginPage = () => {
+    this.setState({
+      isLoginPage: !this.state.isLoginPage
+    })
   };
 
   render() {
     return (
         <div>
-          {this.state.isLoginPage ? <LoginPage/> : <MainPage/>}
+          {this.state.isLoginPage ? <LoginPage handleIsLoginPage={() => {this.handleIsLoginPage()} }/> : <MainPage/>}
         </div>
     );
   }
