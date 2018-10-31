@@ -28,12 +28,12 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: normal;
+    justify-content: safe;
 }
 
 .stats-type-container{
     text-align: center;
-    width: 30%;
+    width: 25%;
 }
 
 .kpi{
@@ -57,10 +57,10 @@
     align-items: center;
     margin: 5px;
     justify-content: space-around;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .kpi-result{
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
 }
