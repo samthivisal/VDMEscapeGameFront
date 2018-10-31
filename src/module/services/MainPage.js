@@ -36,7 +36,9 @@ class MainPage extends Component {
     const settings = {timestampsInSnapshots: true};
     db.settings(settings);
 
-    const reservations = db.collection("reservation").limit(50);
+    // const reservations = db.collection("reservation").limit(50);
+    const reservations = db.collection("reservation");
+
     reservations.onSnapshot((snapshot) => {
       this.storeReservations(snapshot);
     });
@@ -64,11 +66,11 @@ class MainPage extends Component {
           <Tabs contentContainerClassName="tabs-content"
                 className="nav-bar"
           >
-            <Tab
-                value="reservations"
-                icon={<ActionChromeReaderMode/>}
-                children={<TableListBooking reservations={this.state.reservations}/>}
-            />
+            {/*<Tab*/}
+                {/*value="reservations"*/}
+                {/*icon={<ActionChromeReaderMode/>}*/}
+                {/*children={<TableListBooking reservations={this.state.reservations}/>}*/}
+            {/*/>*/}
             <Tab
                 value="charts"
                 icon={<ActionAssessment/>}

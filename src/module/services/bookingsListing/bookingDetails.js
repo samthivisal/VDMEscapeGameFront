@@ -9,8 +9,8 @@ class BookingDetails extends Component {
     const columns = [
       {
         title: 'Civilité',
-        dataIndex: 'Civilite',
-        key: 'Civilite',
+        dataIndex: 'Gender',
+        key: 'Gender',
         align : 'center'
       },{
         title: 'Age',
@@ -19,8 +19,8 @@ class BookingDetails extends Component {
         align : 'center'
       },{
         title: 'Tarif',
-        dataIndex: 'Tarif',
-        key: 'Tarif',
+        dataIndex: 'Price',
+        key: 'Price',
         align : 'center'
       }
     ];

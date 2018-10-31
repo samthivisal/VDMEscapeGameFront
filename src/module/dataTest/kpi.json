@@ -11,6 +11,18 @@
     "type" : "room",
     "post" : ""
   },
+  "vrRoom" : {
+    "name" : "Nombre salle avec VR : ",
+    "icon" : "atom",
+    "type" : "room",
+    "post" : ""
+  },
+  "notVrRoom" : {
+    "name" : "Nombre salle sans VR : ",
+    "icon" : "atom",
+    "type" : "room",
+    "post" : ""
+  },
   "totalPlayers" : {
     "name" : "Nombre total de joueurs : ",
     "icon" : "users",
@@ -26,6 +38,36 @@
   "totalMalePlayers" : {
     "name" : "Nombre d'Homme : ",
     "icon" : "male",
+    "type" : "player",
+    "post" : ""
+  },
+  "totalUnderAgePlayer" : {
+    "name" : "Moins de 18 ans : ",
+    "icon" : "gamepad",
+    "type" : "player",
+    "post" : ""
+  },
+  "totalYoungPersonPlayers" : {
+    "name" : "18 - 24 ans : ",
+    "icon" : "gamepad",
+    "type" : "player",
+    "post" : ""
+  },
+  "totalAdultPlayers" : {
+    "name" : "25 - 39 ans : ",
+    "icon" : "gamepad",
+    "type" : "player",
+    "post" : ""
+  },
+  "totalOldAdultPlayers" : {
+    "name" : "40 - 54 ans : ",
+    "icon" : "gamepad",
+    "type" : "player",
+    "post" : ""
+  },
+  "totalSeniorPlayers" : {
+    "name" : "Plus de 55 ans: ",
+    "icon" : "gamepad",
     "type" : "player",
     "post" : ""
   },

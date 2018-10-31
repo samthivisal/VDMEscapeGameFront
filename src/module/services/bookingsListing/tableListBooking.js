@@ -51,6 +51,7 @@ class TableListBooking extends Component {
 
   storeReservations = (querySnapshot) => {
     const personalReservationsArray = [];
+
     querySnapshot.forEach((snapshot) => {
       personalReservationsArray.push(snapshot.data());
     });
@@ -62,16 +63,16 @@ class TableListBooking extends Component {
     const columns = [
       {
         Header: 'Jour',
-        id: 'GameJour',
-        accessor: (date) => {
-          return (<span>{moment(date).format('dddd Do MMMM YYYY')}</span>)
+        accessor: 'GameDay',
+        Cell: (date) => {
+          return (<span>{moment(date["value"]).format('dddd Do MMMM YYYY')}</span>)
         },
       }, {
         Header: 'Horaire',
-        accessor: 'GameHoraire',
+        accessor: 'GameHour',
       }, {
         Header: 'Nom de la salle',
-        accessor: 'GameNom',
+        accessor: 'GameName',
         filterable: true,
         filterMethod: (filter, row) =>
             row.GameNom.toLowerCase().startsWith(filter.value.toLowerCase()),
@@ -83,7 +84,7 @@ class TableListBooking extends Component {
             row.GameVR.toLowerCase().startsWith(filter.value.toLowerCase()),
       }, {
         Header: 'Nombre joueur',
-        accessor: 'nbSpetateur',
+        accessor: 'nbSpectators',
         filterable: true,
       }, {
         Header: 'Plus de détails',
@@ -95,6 +96,7 @@ class TableListBooking extends Component {
                   theme="outlined"
                   style={style}
                   onClick={(event) => {
+                    console.log(reservation.id);
                     this.getPersonalReservations(reservation.id);
                     this.handleDisplayModal()
                   }}

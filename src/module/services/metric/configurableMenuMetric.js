@@ -37,10 +37,12 @@ class ConfigurableMenuMetric extends Component {
 
     _.forEach(reservations, (reservation) => {
       const dateReservation = parseInt(moment(reservation["GameJour"]).format("X"), 10);
+
       if (_.inRange(dateReservation, startDateTs, endDateTs)){
         specificReservation.push(reservation);
       }
     });
+
     this.setState({specificReservation: specificReservation});
     this.setState({displayMetric : true});
   };
