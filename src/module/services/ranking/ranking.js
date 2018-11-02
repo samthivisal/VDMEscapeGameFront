@@ -1,15 +1,27 @@
 import React, {Component} from 'react';
-import 'firebase/firestore';
-import _ from "lodash";
+
+//Import Lodash module
+import _ from 'lodash';
 
 class Ranking extends Component {
-  componentDidMount(){
 
-  }
+  renderRanking = () => {
+    const rankingArray = [];
+
+    if (Object.keys(this.props.ranking).length !== 0) {
+      _.forEach(this.props.ranking[0], (rank, rankKey) => {
+        rankingArray.push(
+          <span>{`${rankKey} : ${rank} points `}</span>
+        );
+      });
+    }
+
+    return (rankingArray);
+  };
 
   render() {
     return (
-        <div>COUCOU</div>
+        <div>{this.renderRanking()}</div>
     )
   }
 }

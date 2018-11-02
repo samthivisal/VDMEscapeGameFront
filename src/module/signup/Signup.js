@@ -1,19 +1,14 @@
 import React, {Component} from 'react';
-
+import firebase from "firebase";
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import './signup.css';
 
-import firebase from 'firebase';
-import 'firebase/auth';
-
-import Logo from '../../logo.png';
-
-import './login.css';
-
-class LoginPage extends Component {
+class Signup extends Component {
   state = {
     email: "",
-    password: ""
+    password: "",
+    passwordSecond: ""
   };
 
   handleChange = (state, typed) => {
@@ -22,26 +17,34 @@ class LoginPage extends Component {
     });
   };
 
-  handleSubmit(event) {
-    firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
-        .then((response) => {
-          this.props.history.push("/Main");
-        })
-        .catch(function (error) {
-          alert(error.message);
-          console.log(error);
-        });
+  handleSubmit() {
+    if (this.state.password === this.state.passwordSecond){
+      firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
+          .then((response) => {
+            this.props.history.push("/");
+          })
+          .catch(function (error) {
+            alert(error.message);
+            console.log(error);
+          });
+    } else {
+      alert("Password does not match with the second password");
+      this.setState({
+        password : "",
+        passwordSecond : ""
+      })
+    }
   }
 
-  redirectSignUp = () => {
-    this.props.history.push("/SignUp");
+  redirectLogin = () => {
+    this.props.history.push("/");
   };
 
   render() {
     return (
         <div className="form-container">
-          <form className="login-form">
-            <img src={Logo}/>
+          <form className="signup-form">
+            <span className='signup-title'>Register</span>
             <TextField
                 label="Email"
                 value={this.state.email}
@@ -59,6 +62,15 @@ class LoginPage extends Component {
                 }}
                 margin="normal"
             />
+            <TextField
+                label="Password verification"
+                type="password"
+                value={this.state.passwordSecond}
+                onChange={(e) => {
+                  this.handleChange("passwordSecond", e)
+                }}
+                margin="normal"
+            />
             <Button
                 className="button-login"
                 color="primary"
@@ -66,16 +78,16 @@ class LoginPage extends Component {
                   this.handleSubmit()
                 }}
             >
-              Sign in
+              Sign up
             </Button>
             <Button
                 className="button-signup"
                 color="primary"
                 onClick={() => {
-                  this.redirectSignUp()
+                  this.redirectLogin()
                 }}
             >
-              Don't have account ? Sign up
+              Have an account ?
             </Button>
           </form>
         </div>
@@ -83,4 +95,5 @@ class LoginPage extends Component {
   }
 }
 
-export default LoginPage;
+
+export default Signup;

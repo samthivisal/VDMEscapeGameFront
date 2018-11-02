@@ -1,55 +1,48 @@
 import React, {Component} from 'react';
-
 //Import Firebase module
 import * as firebase from 'firebase';
 import 'firebase/firestore';
-
 //Import Material UI module
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {Tabs, Tab} from 'material-ui/Tabs';
+import {Tab, Tabs} from 'material-ui/Tabs';
 import ActionChromeReaderMode from 'material-ui/svg-icons/action/chrome-reader-mode';
 import ActionAssessment from 'material-ui/svg-icons/action/assessment';
-
 //Import Customs modules
 import TableListBooking from './bookingsListing/tableListBooking';
 import ConfigurableMenuMetric from './metric/configurableMenuMetric';
 import Ranking from './ranking/ranking';
-
 //Import Lodash module
 import _ from 'lodash';
-
 //Import FontAwesome module
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 class MainPage extends Component {
   state = {
-    reservations : [],
-    ranking : [],
+    reservations: [],
+    ranking: [],
   };
 
   componentDidMount() {
-    firebase.initializeApp({
-      apiKey: process.env.REACT_FIREBASE_API_KEY,
-      authDomain: process.env.REACT_FIREBASE_AUTH_DOMAIN,
-      databaseURL: process.env.REACT_FIREBASE_DATABASE_URL,
-      projectId: "vdm-escape-game",
-      storageBucket: process.env.REACT_FIREBASE_STORAGE_BUCKET,
-      messagingSenderId: process.env.REACT_FIREBASE_MESSAGING_SENDER_ID
-    });
+    if (firebase.apps.length === 1) {
+      const db = firebase.firestore();
+      const settings = {timestampsInSnapshots: true};
+      db.settings(settings);
 
-    const db = firebase.firestore();
-    const settings = {timestampsInSnapshots: true};
-    db.settings(settings);
+      const reservations = db.collection("reservation");
+      const ranking = db.collection("themeRanking");
 
-    const reservations = db.collection("reservation");
-
-    reservations.onSnapshot((snapshot) => {
-      this.storeReservations(snapshot);
-    });
+      reservations.onSnapshot((snapshot) => {
+            this.storeReservations(snapshot, ranking);
+          }
+      );
+    } else {
+      this.props.history.push("/");
+    }
   }
 
-  storeReservations = (querySnapshot) => {
+  storeReservations = (querySnapshot, ranking) => {
     const reservationsArray = [...this.state.reservations];
+
     querySnapshot.forEach((doc) => {
       const element = doc.data();
       element.id = doc.id;
@@ -60,9 +53,22 @@ class MainPage extends Component {
       return reservation["id"];
     });
 
-    this.setState({reservations : uniqTableReservation});
+    this.setState({reservations: uniqTableReservation}, () => {
+      ranking.onSnapshot((snapshot) => {
+        this.storeRanking(snapshot);
+      });
+    });
   };
 
+  storeRanking = (querySnapshot) => {
+    const rankingArray = [...this.state.ranking];
+
+    querySnapshot.forEach((doc) => {
+      rankingArray.push(doc.data());
+    });
+
+    this.setState({ranking: rankingArray});
+  };
 
   render() {
     const icon = (<FontAwesomeIcon className="fas fa-3x" icon={"trophy"}/>);
@@ -85,7 +91,7 @@ class MainPage extends Component {
             <Tab
                 value="ranking"
                 icon={icon}
-                children={<Ranking />}
+                children={<Ranking ranking={this.state.ranking}/>}
             />
           </Tabs>
         </MuiThemeProvider>

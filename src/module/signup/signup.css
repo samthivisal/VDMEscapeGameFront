@@ -1,21 +1,15 @@
-.form-container {
-    display: flex;
-    justify-content: center;
-}
-
-.login-title{
+.signup-title{
     font-size:20px;
     text-align: center;
     color: lightgrey;
 }
 
-
-.login-form {
+.signup-form {
     border-radius: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);
     margin-top: 190px;
     padding: 100px;
-    background: moccasin;
+    background: #4CAF50;
     display: flex;
     justify-content: center;
     flex-direction: column;
