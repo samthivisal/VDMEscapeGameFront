@@ -13,13 +13,18 @@ import ActionAssessment from 'material-ui/svg-icons/action/assessment';
 //Import Customs modules
 import TableListBooking from './bookingsListing/tableListBooking';
 import ConfigurableMenuMetric from './metric/configurableMenuMetric';
+import Ranking from './ranking/ranking';
 
 //Import Lodash module
 import _ from 'lodash';
 
+//Import FontAwesome module
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+
 class MainPage extends Component {
   state = {
-    reservations : []
+    reservations : [],
+    ranking : [],
   };
 
   componentDidMount() {
@@ -36,7 +41,6 @@ class MainPage extends Component {
     const settings = {timestampsInSnapshots: true};
     db.settings(settings);
 
-    // const reservations = db.collection("reservation").limit(50);
     const reservations = db.collection("reservation");
 
     reservations.onSnapshot((snapshot) => {
@@ -57,10 +61,12 @@ class MainPage extends Component {
     });
 
     this.setState({reservations : uniqTableReservation});
-
   };
 
+
   render() {
+    const icon = (<FontAwesomeIcon className="fas fa-3x" icon={"trophy"}/>);
+
     return (
         <MuiThemeProvider>
           <Tabs contentContainerClassName="tabs-content"
@@ -75,6 +81,11 @@ class MainPage extends Component {
                 value="charts"
                 icon={<ActionAssessment/>}
                 children={<ConfigurableMenuMetric reservations={this.state.reservations}/>}
+            />
+            <Tab
+                value="ranking"
+                icon={icon}
+                children={<Ranking />}
             />
           </Tabs>
         </MuiThemeProvider>

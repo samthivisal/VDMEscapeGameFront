@@ -13,7 +13,7 @@ library.add(faFemale, faMale, faFire, faUsers, faHandHoldingUsd, faSnowflake, fa
 
 class App extends Component {
   state = {
-    isLoginPage: true,
+    isLoginPage: false,
   };
 
   handleIsLoginPage = () => {

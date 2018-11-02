@@ -6,9 +6,6 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 //Import Lodash module
 import _ from 'lodash';
 
-//Import custom modules
-import ModalTable from './modalTable';
-
 import translationIRL from '../../dataTest/translationIRL';
 
 class Metric extends Component {
@@ -43,17 +40,6 @@ class Metric extends Component {
     } else {
       return (
           <FontAwesomeIcon className="fas fa-3x" icon={`${this.props.icon}`}/>
-      )
-    }
-  };
-
-  renderModalExtraDetails = () => {
-    if (this.state.modalExtraDetails){
-      return (
-          <ModalTable
-              visible={this.state.modalExtraDetails}
-              bookingsFiltered={this.props.bookingsFiltered}
-              willClose={() => this.handleDisplayModal()}/>
       )
     }
   };
