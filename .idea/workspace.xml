@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d597fa1-29d2-4101-9c98-f3dd9e1cfa16" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/module/login/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/login/LoginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/login/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/login/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/services/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/services/metric/metrics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/metric/metrics.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/module/services/ranking/ranking.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/ranking/ranking.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,14 +18,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43406594">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="LoginPage.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/module/login/LoginPage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="612">
-                  <caret line="36" selection-start-line="36" selection-end-line="37" />
+                <state relative-caret-position="425">
+                  <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -37,37 +33,44 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/App.js">
+          <file leaf-file-name="ranking.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/module/services/ranking/ranking.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="414">
-                  <caret line="37" column="61" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                    <element signature="e#148#198#0" expanded="true" />
-                    <element signature="e#255#313#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="238">
+                  <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Signup.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/module/signup/Signup.js">
+          <file leaf-file-name="configurableMenuMetric.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/module/services/metric/configurableMenuMetric.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+                <state relative-caret-position="986">
+                  <caret line="67" column="7" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
                   <folding>
-                    <element signature="e#0#39#0" expanded="true" />
+                    <element signature="e#62#90#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="signup.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/module/signup/signup.css">
+          <file leaf-file-name="metric.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/module/services/metric/metric.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+                  <folding>
+                    <element signature="e#157#180#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="metrics.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/module/services/metric/metrics.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="255">
-                  <caret line="15" selection-start-line="15" selection-end-line="15" />
+                  <caret line="17" selection-start-line="17" selection-end-line="17" />
                 </state>
               </provider>
             </entry>
@@ -75,17 +78,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="MainPage.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/module/services/MainPage.js">
+        <leaf>
+          <file leaf-file-name="App.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/App.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-                  <folding>
-                    <element signature="e#65#102#0" expanded="true" />
-                    <element signature="e#160#227#0" expanded="true" />
-                    <element signature="e#455#521#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="683">
+                  <caret line="96" column="20" lean-forward="true" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -136,21 +134,21 @@
         <option value="$PROJECT_DIR$/src/module/services/bookingsListing/tableListBooking.js" />
         <option value="$PROJECT_DIR$/src/module/services/metric/modalTable.js" />
         <option value="$PROJECT_DIR$/src/module/dataTest/kpi.json" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/module/dataTest/translationIRL.json" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/module/services/metric/metrics.js" />
         <option value="$PROJECT_DIR$/src/module/services/metric/configurableMenuMetric.js" />
         <option value="$PROJECT_DIR$/src/module/services/metric/metric.js" />
-        <option value="$PROJECT_DIR$/src/module/services/ranking/ranking.js" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/module/signup/signup.js" />
         <option value="$PROJECT_DIR$/src/module/signup/signup.css" />
         <option value="$PROJECT_DIR$/src/module/signup/Signup.js" />
         <option value="$PROJECT_DIR$/src/module/login/login.css" />
-        <option value="$PROJECT_DIR$/src/module/login/LoginPage.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/module/services/MainPage.js" />
+        <option value="$PROJECT_DIR$/src/module/services/metric/metrics.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/module/services/ranking/ranking.js" />
+        <option value="$PROJECT_DIR$/src/module/login/LoginPage.js" />
       </list>
     </option>
   </component>
@@ -310,12 +308,12 @@
       <workItem from="1540821066605" duration="1374000" />
       <workItem from="1540981319204" duration="14806000" />
       <workItem from="1541147847830" duration="22000" />
-      <workItem from="1541151388657" duration="13771000" />
+      <workItem from="1541151388657" duration="14808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106734000" />
+    <option name="totallyTimeSpent" value="107771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -544,20 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module/services/bookingsListing/tableListBooking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="59" column="4" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/module/dataTest/translationIRL.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -583,16 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module/services/metric/configurableMenuMetric.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="7" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
-          <folding>
-            <element signature="e#62#90#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -628,30 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module/services/metric/metrics.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="143" column="119" selection-start-line="143" selection-start-column="113" selection-end-line="143" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module/services/metric/metric.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-507">
-          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="63" />
-          <folding>
-            <element signature="e#157#180#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module/services/ranking/ranking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -704,24 +654,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module/login/LoginPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" selection-start-line="36" selection-end-line="37" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/module/services/MainPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+        <state relative-caret-position="476">
+          <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
           <folding>
             <element signature="e#65#102#0" expanded="true" />
             <element signature="e#160#227#0" expanded="true" />
             <element signature="e#455#521#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/services/bookingsListing/tableListBooking.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="859">
+          <caret line="59" column="4" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="96" column="20" lean-forward="true" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/services/metric/metrics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/services/metric/metric.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#157#180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/services/metric/configurableMenuMetric.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="67" column="7" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
+          <folding>
+            <element signature="e#62#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/services/ranking/ranking.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/login/LoginPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

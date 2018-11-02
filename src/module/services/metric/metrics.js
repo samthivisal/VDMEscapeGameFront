@@ -15,7 +15,6 @@ class Metrics extends Component {
   };
 
   componentDidMount() {
-    console.log(this.props.bookingsFiltered);
     this.getUniqRoomName();
     this.getUniqRoomPeriod();
   }

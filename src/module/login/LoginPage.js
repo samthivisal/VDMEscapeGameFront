@@ -41,7 +41,7 @@ class LoginPage extends Component {
     return (
         <div className="form-container">
           <form className="login-form">
-            <img src={Logo}/>
+            <img alt="logo-vdm" src={Logo}/>
             <TextField
                 label="Email"
                 value={this.state.email}

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-
 //Import Lodash module
 import _ from 'lodash';
 
@@ -11,7 +10,10 @@ class Ranking extends Component {
     if (Object.keys(this.props.ranking).length !== 0) {
       _.forEach(this.props.ranking[0], (rank, rankKey) => {
         rankingArray.push(
-          <span>{`${rankKey} : ${rank} points `}</span>
+            <div className="ranking-span">
+              <span className="ranking-key">{`${rankKey} :`}</span>
+              <span className="ranking-result">{` ${rank} points `}</span>
+            </div>
         );
       });
     }
@@ -21,7 +23,9 @@ class Ranking extends Component {
 
   render() {
     return (
-        <div>{this.renderRanking()}</div>
+        <div className="ranking-span-container">
+          {this.renderRanking()}
+        </div>
     )
   }
 }

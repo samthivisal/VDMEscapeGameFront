@@ -78,3 +78,25 @@
     font-size: 12px;
     font-weight: bold;
 }
+
+.ranking-span-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ranking-span {
+    text-align: initial;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 0 3px #b7b7b7;
+    margin: 10px;
+    background: white;
+}
+
+.ranking-key {
+    font-size: 18px;
+}
+
+.ranking-result {
+    font-weight: bold;
+}
