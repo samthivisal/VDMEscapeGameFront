@@ -13,6 +13,8 @@ import Metrics from './metrics';
 //Import Lodash module
 import _ from 'lodash';
 
+import Unicorn from '../../../unicornRunning.gif';
+
 class ConfigurableMenuMetric extends Component {
   state = {
     specificReservation: [],
@@ -21,6 +23,7 @@ class ConfigurableMenuMetric extends Component {
     startTime: "",
     endDate: "empty",
     endTime: "",
+    displayPoney: false
   };
 
   handleOnChangeDatePickerStart = (dateString) => {
@@ -64,10 +67,10 @@ class ConfigurableMenuMetric extends Component {
           });
 
           if (Object.keys(specificReservation).length === 0) {
-            this.setState({displayMetric: false});
+            this.setState({displayMetric: false, displayPoney: true});
           } else {
             this.setState({specificReservation: uniqTableReservation});
-            this.setState({displayMetric: true});
+            this.setState({displayMetric: true, displayPoney: false});
           }
         });
   };
@@ -77,6 +80,16 @@ class ConfigurableMenuMetric extends Component {
       return (
           <Metrics bookingsFiltered={reservationsFiltered}/>
       )
+    }
+  };
+
+  displayPoney = () => {
+    if (this.state.displayPoney) {
+      return (
+          <div className="poney-container">
+            <img src={Unicorn}/>
+          </div>
+      );
     }
   };
 
@@ -121,6 +134,7 @@ class ConfigurableMenuMetric extends Component {
             </Button>
           </div>
           {this.displayMetric(this.state.specificReservation)}
+          {this.displayPoney()}
         </div>
     )
   }
