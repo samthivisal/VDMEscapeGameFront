@@ -1,30 +1,64 @@
 import React, {Component} from 'react';
 //Import Lodash module
 import _ from 'lodash';
+//Import Firebase module
+import * as firebase from 'firebase';
+import 'firebase/firestore';
 
 class Ranking extends Component {
+  state = {
+    rankings: [],
+    displayRankings: false
+  };
 
-  renderRanking = () => {
-    const rankingArray = [];
+  componentDidMount() {
+    this.getRankingFromFirebase();
+  };
 
-    if (Object.keys(this.props.ranking).length !== 0) {
-      _.forEach(this.props.ranking[0], (rank, rankKey) => {
-        rankingArray.push(
+  getRankingFromFirebase = () => {
+    if (firebase.apps.length === 1) {
+      let rankingArray = [];
+
+      const db = firebase.firestore();
+      const settings = {timestampsInSnapshots: true};
+      db.settings(settings);
+      const rankings = db.collection("themeRanking");
+
+      rankings.onSnapshot((snapshot) => {
+        snapshot.docChanges().forEach((change) => {
+          rankingArray = (change.doc.data());
+        });
+
+        this.setState({
+          rankings: rankingArray
+        });
+      });
+    } else {
+      window.location.assign("/");
+    }
+  };
+
+  renderRanks = () => {
+    const rankingRender = [];
+
+    if (Object.keys(this.state.rankings).length !== 0) {
+      _.forEach(this.state.rankings, (rank, rankKey) => {
+        rankingRender.push(
             <div className="ranking-span">
               <span className="ranking-key">{`${rankKey} :`}</span>
               <span className="ranking-result">{` ${rank} points `}</span>
             </div>
         );
       });
-    }
 
-    return (rankingArray);
+      return (rankingRender);
+    }
   };
 
   render() {
     return (
         <div className="ranking-span-container">
-          {this.renderRanking()}
+          {this.renderRanks()}
         </div>
     )
   }

@@ -29,18 +29,16 @@ class MainPage extends Component {
       db.settings(settings);
 
       const reservations = db.collection("reservation");
-      const ranking = db.collection("themeRanking");
 
       reservations.onSnapshot((snapshot) => {
-            this.storeReservations(snapshot, ranking);
-          }
-      );
+        this.storeReservations(snapshot);
+      });
     } else {
       this.props.history.push("/");
     }
   }
 
-  storeReservations = (querySnapshot, ranking) => {
+  storeReservations = (querySnapshot) => {
     const reservationsArray = [...this.state.reservations];
 
     querySnapshot.forEach((doc) => {
@@ -53,21 +51,7 @@ class MainPage extends Component {
       return reservation["id"];
     });
 
-    this.setState({reservations: uniqTableReservation}, () => {
-      ranking.onSnapshot((snapshot) => {
-        this.storeRanking(snapshot);
-      });
-    });
-  };
-
-  storeRanking = (querySnapshot) => {
-    const rankingArray = [...this.state.ranking];
-
-    querySnapshot.forEach((doc) => {
-      rankingArray.push(doc.data());
-    });
-
-    this.setState({ranking: rankingArray});
+    this.setState({reservations: uniqTableReservation});
   };
 
   render() {
@@ -86,12 +70,12 @@ class MainPage extends Component {
             <Tab
                 value="charts"
                 icon={<ActionAssessment/>}
-                children={<ConfigurableMenuMetric reservations={this.state.reservations}/>}
+                children={<ConfigurableMenuMetric />}
             />
             <Tab
                 value="ranking"
                 icon={icon}
-                children={<Ranking ranking={this.state.ranking}/>}
+                children={<Ranking />}
             />
           </Tabs>
         </MuiThemeProvider>

@@ -1,26 +1,26 @@
 import React, {Component} from 'react';
-
 //Import Antd module
 import 'antd/dist/antd.css';
-import {Button, DatePicker, TimePicker } from 'antd';
-
+import {Button, DatePicker, TimePicker} from 'antd';
+//Import Lodash module
+//Import Moment module
+import * as moment from 'moment';
+//Import Firebase module
+import * as firebase from 'firebase';
+import 'firebase/firestore';
+//Import Customs modules
+import Metrics from './metrics';
 //Import Lodash module
 import _ from 'lodash';
 
-//Import Moment module
-import * as moment from 'moment';
-
-//Import Customs modules
-import Metrics from './metrics';
-
 class ConfigurableMenuMetric extends Component {
-  state ={
-    specificReservation : [],
-    displayMetric : false,
-    startDate : "",
-    startTime : "",
-    endDate: "",
-    endTime : "",
+  state = {
+    specificReservation: [],
+    displayMetric: false,
+    startDate: "empty",
+    startTime: "",
+    endDate: "empty",
+    endTime: "",
   };
 
   handleOnChangeDatePickerStart = (dateString) => {
@@ -40,29 +40,40 @@ class ConfigurableMenuMetric extends Component {
   };
 
   getReservationsBetweenDate = (reservations, startDate, endDate, startTime, endTime) => {
-    const specificReservation= [];
+    const specificReservation = [];
 
     const startDateTs = parseInt(moment(`${startDate}, ${startTime}`).format("X"), 10);
     const endDateTs = parseInt(moment(`${endDate}, ${endTime}`).format("X"), 10);
 
-    _.forEach(reservations, (reservation) => {
-      const dateReservation = parseInt(moment(reservation["GameDay"]).format("X"), 10);
+    const db = firebase.firestore();
+    const settings = {timestampsInSnapshots: true};
+    db.settings(settings);
+    const bookings = db.collection("reservation");
 
-      if (_.inRange(dateReservation, startDateTs, endDateTs)){
-        specificReservation.push(reservation);
-      }
-    });
+    bookings.where("Timestamp", ">=", startDateTs).where("Timestamp", "<=", endDateTs)
+        .onSnapshot((snapshot) => {
+          snapshot.forEach((doc) => {
+            const element = doc.data();
+            element.id = doc.id;
 
-    if (Object.keys(specificReservation).length === 0){
-      this.setState({displayMetric : false});
-    } else {
-      this.setState({specificReservation: specificReservation});
-      this.setState({displayMetric : true});
-    }
+            specificReservation.push(element);
+          });
+
+          const uniqTableReservation = _.uniqBy(specificReservation, (reservation) => {
+            return reservation["id"];
+          });
+
+          if (Object.keys(specificReservation).length === 0) {
+            this.setState({displayMetric: false});
+          } else {
+            this.setState({specificReservation: uniqTableReservation});
+            this.setState({displayMetric: true});
+          }
+        });
   };
 
   displayMetric = (reservationsFiltered) => {
-    if (this.state.displayMetric){
+    if (this.state.displayMetric) {
       return (
           <Metrics bookingsFiltered={reservationsFiltered}/>
       )
@@ -96,7 +107,17 @@ class ConfigurableMenuMetric extends Component {
                 defaultValue={moment('00:00', 'HH:mm')}
             />
             <Button
-                onClick={() => this.getReservationsBetweenDate(this.props.reservations, this.state.startDate, this.state.endDate, this.state.startTime, this.state.endTime)}> Go
+                onClick={
+                  () => {
+                    if (this.state.startDate !== "empty" && this.state.endDate !== "empty") {
+                      this.getReservationsBetweenDate(this.props.reservations, this.state.startDate, this.state.endDate, this.state.startTime, this.state.endTime);
+
+                    } else {
+                      alert("Merci de bien remplir tous les champs du formulaire!");
+                    }
+                  }
+                }
+            > Go
             </Button>
           </div>
           {this.displayMetric(this.state.specificReservation)}
