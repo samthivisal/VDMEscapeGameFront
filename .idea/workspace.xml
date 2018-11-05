@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d597fa1-29d2-4101-9c98-f3dd9e1cfa16" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/services/metric/configurableMenuMetric.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/services/metric/configurableMenuMetric.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/login/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/login/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/signup/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/signup/signup.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,14 +16,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5355955">
+    <splitter split-orientation="horizontal" split-proportion="0.45236593">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="App.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/App.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="717">
-                  <caret line="105" column="18" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
+                <state relative-caret-position="768">
+                  <caret line="108" column="1" lean-forward="true" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/module/login/login.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="14" selection-start-line="14" selection-end-line="17" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="signup.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/module/signup/signup.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                  <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
                 </state>
               </provider>
             </entry>
@@ -144,9 +162,7 @@
         <option value="$PROJECT_DIR$/src/module/dataTest/translationIRL.json" />
         <option value="$PROJECT_DIR$/src/module/services/metric/metric.js" />
         <option value="$PROJECT_DIR$/src/module/signup/signup.js" />
-        <option value="$PROJECT_DIR$/src/module/signup/signup.css" />
         <option value="$PROJECT_DIR$/src/module/signup/Signup.js" />
-        <option value="$PROJECT_DIR$/src/module/login/login.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/module/services/metric/metrics.js" />
         <option value="$PROJECT_DIR$/src/module/login/LoginPage.js" />
@@ -157,6 +173,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/module/services/metric/configurableMenuMetric.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/module/login/login.css" />
+        <option value="$PROJECT_DIR$/src/module/signup/signup.css" />
       </list>
     </option>
   </component>
@@ -234,6 +252,13 @@
               <item name="services" type="462c0819:PsiDirectoryNode" />
               <item name="ranking" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="VDMEscapeGameFront" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VDMEscapeGameFront" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="signup" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -306,7 +331,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119978000" />
+    <option name="totallyTimeSpent" value="120474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -541,20 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module/signup/signup.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module/login/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/module/signup/Signup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -658,8 +669,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="105" column="18" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
+        <state relative-caret-position="768">
+          <caret line="108" column="1" lean-forward="true" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/login/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/signup/signup.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
         </state>
       </provider>
     </entry>

@@ -6,10 +6,10 @@
 
 .signup-form {
     border-radius: 20px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: 2px 2px 2px 3px #e0dad0;
     margin-top: 190px;
-    padding: 100px;
-    background: #4CAF50;
+    padding: 50px 85px 50px 82px;
+    background: #FFFFFF;
     display: flex;
     justify-content: center;
     flex-direction: column;
